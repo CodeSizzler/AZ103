@@ -4,7 +4,7 @@
 <p>In this article we are going to discuss about Managing and Deploying Virtual Machines using ARM Templates, PowerShell in Azure Portal. Also learn to analyse the Virtual machine and to deploy a Linux Virtual Machine over the existing server.</p>
 
 <h2>Pre-requisites</h2>
-<p>To perform this demo you must have valid Azure subscription and some basic knowledge on Azure Virtual Machine, Power Shell, Putty.ex, ARM Templates.</p>
+<p>To perform this demo you must have valid Azure subscription and some basic knowledge on Azure Virtual Machine, Power Shell, Putty.ex, ARM Templates. Befor starting this lab download the template files from here - http://bit.ly/vmtemplatecs</p>
 
 <h2>Demo</h2>
 
