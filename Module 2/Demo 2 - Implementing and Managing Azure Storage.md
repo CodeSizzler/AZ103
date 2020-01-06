@@ -94,18 +94,15 @@
 	<p>'DemoRG1')[0].StorageAccountName	</p> 
 	<p>$storageAccount2Name = (Get-AzStorageAccount -ResourceGroupName	</p> 
 	<p>'StorageRG1')[0].StorageAccountName	</p> 
-	
-	<p>$storageAccount1Key1 = (Get-AzStorageAccountKey -ResourceGroupName 'StorageRG1'	</p> 
-	<p>StorageAccountName $storageAccount1Name)[0].Value	</p> 
-	<p>$storageAccount2Key1 = (Get-AzStorageAccountKey -ResourceGroupName 'StorageRG2' -	</p>
-	<p>StorageAccountName $storageAccount2Name)[0].Value	</p>
+	<p>$storageAccount1Key1 = (Get-AzStorageAccountKey -ResourceGroupName 'StorageRG1'</p> 
+	<p>StorageAccountName $storageAccount1Name)[0].Value</p> 
+	<p>$storageAccount2Key1 = (Get-AzStorageAccountKey -ResourceGroupName 'StorageRG2' --StorageAccountName $storageAccount2Name)[0].Value	</p>
 <img src="https://codesizzlergit.blob.core.windows.net/az103-2-002/26.jpg"/>
 <p>•After getting the output for the previous command run the command</p>
-	<p>azcopy --source	</p> 
-	<p>https://$storageAccount1Name.blob.core.windows.net/DemoContainer1/ -destination	</p> 
-	<p>https://$storageAccount2Name.blob.core.windows.net/DemoContainer1/ --sourcekey 	</p>
-	<p>$storageAccount1Key1 --dest-key $storageAccount2Key1 --include "az" -sync-copy	</p>
-	<p>--recursive	</p>
+	<p>azcopy --source</p> 
+	<p>https://$storageAccount1Name.blob.core.windows.net/DemoContainer1/ -destination</p> 
+	<p>https://$storageAccount2Name.blob.core.windows.net/DemoContainer1/ --sourcekey </p>
+	<p>$storageAccount1Key1 --dest-key $storageAccount2Key1 --include "az" -sync-copy --recursive</p>
 <img src="https://codesizzlergit.blob.core.windows.net/az103-2-002/27.jpg"/>
 <p>•Verify that the command output confirm two files were transferred.</p>
 <img src="https://codesizzlergit.blob.core.windows.net/az103-2-002/28.jpg"/>
