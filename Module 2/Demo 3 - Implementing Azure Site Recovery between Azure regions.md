@@ -8,7 +8,7 @@
 	<p>•Azure Site Recovery</p>
 
 <h2>Template files</h2>
-<p>Download the templates and parameter files for Az-101 from https://codesizzlertechmy.sharepoint.com/:f:/g/personal/imthiyas_codesizzler_info/EiTMnnzNZcVLuWwyToV Bpx8BOp-044VcLTI0Z2Qtuqu6vA?e=VvBG7z.</p>
+<p>Download the templates and parameter files for Az-101 from https://codesizzlertechmy.sharepoint.com/:f:/g/personal/imthiyas_codesizzler_info/EiTMnnzNZcVLuWwyToVBpx8BOp-044VcLTI0Z2Qtuqu6vA?e=VvBG7z.</p>
 
 <h2>Demo</h2>
 <p>Log-in with your account in Azure Portal using www.portal.azure.com. In Azure portal click on create a new resource and search for Template Deployment.</p>
