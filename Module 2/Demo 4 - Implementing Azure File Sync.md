@@ -3,7 +3,7 @@
 <p>In this walkthrough task we will locate an Azure Policy to restrict deployment of Azure resources to a particular Datacenter, and then assign that allowed location policy to a subscription. We will then verify that creating an Azure resource, such as a virtual machine, outside of the allowed location is blocked. We will finally remove the allowed location policy assignment, to allow us deploy resources again to any Datacenter location using that same subscription.</p>
 
 <h2>Technical requirements</h2>
-<p>You must need a valid Azure Subscription and need some knowledge on Azure File Sync and Template deployment to work in this session. Follow the below steps for implementing Azure File Sync.</p>
+<p>You must need a valid Azure Subscription and need some knowledge on Azure File Sync and Template deployment to work in this session. Follow the below steps for implementing Azure File Sync. Befor starting this lab download the template files from - http://bit.ly/39HLshF</p>
 
 <h2>Steps:</h2>
 
