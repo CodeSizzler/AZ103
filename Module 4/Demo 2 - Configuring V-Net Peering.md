@@ -1,4 +1,4 @@
-<h1>Configuring VNet peering and service chaining</h1>
+<h1>Configuring VNet peering</h1>
 <p>This lab is going to deal with Azure Virtual Network Peering. VNET peering is a concept of combining two different networks from same or different regions of Azure to become a single network for having an authenticated and secured access for resources. When we use VNET peering, the concept of creating VPN Gateways to connect different Azure Networks is not required since VNET Peering does the same thing for you in a cheaper and easier way.</p>
 
 <h2>Demo Scenario:</h2>
