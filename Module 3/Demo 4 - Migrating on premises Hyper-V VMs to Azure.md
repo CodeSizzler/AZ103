@@ -20,9 +20,7 @@
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/05.jpg"/>
 <p>After uploading the files run the following command in PowerShell to copy the InstallHyperV.ps1 and InstallHyperV.zip files in a sub folder.</p>
 	<p>Set-Location -Path $HOME</p>
-	
 	<p>New-Item -Type Directory -Path '.\DSC'</p>
-	
 	<p>Move-Item -Path '.\InstallHyperV.*' -Destination '.\DSC'</p>
 
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/06.jpg"/>
@@ -93,38 +91,36 @@
 	<p>•	Where do you want to replicate your machines to: To Azure</p>
 	<p>•	Are your machines virtualized: Yes, with Hyper-V</p>
 	<p>•	Are you using System Centre VMM to manage your Hyper-V hosts: No</p> 
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/31.jpg"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/31.JPG"/>
 
 <p>For deployment planning select Yes I have done it from the drop down and click OK.</p>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/32.jpg"/>
 <p>For prepare source</p>
-	
 	<p>•	Select Hyper-V Site: CodesizzlerHyperVsite</p>
 	<p>•	Ensure Hyper-V servers are added: az1010102b-vm1</p>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/33.jpg"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/33.JPG"/>
 <p>For target add a network.</p>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/34.jpg"/>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/35.jpg"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/35.JPG"/>
 <p>After adding the network add the Storage account.</p>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/36.jpg"/>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/37.jpg"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/37.JPG"/>
 <p>After adding the storage account and network click on OK.</p>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/38.jpg"/>
 <p>Create and associate a replicate setting with following configuration</p>
-
-	<p>•	Name: codesizzlerassociatepolicy</p>
-	<p>•	Source type: Hyper-V</p>
-	<p>•	Target type: Azure</p>
-	<p>•	Copy frequency: 5</p>
-	<p>•	Recovery point retention in hours: 2</p>
-	<p>•	App-consistent snapshot frequency in hours: 1</p>
-	<p>•	Initial replication start time: Immediately</p>
-	<p>•	Associated Hyper-V site: CodesizerHyperVsite</p>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/39.jpg"/>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/40.jpg"/>
+	<p>Name: codesizzlerassociatepolicy</p>
+	<p>Source type: Hyper-V</p>
+	<p>Target type: Azure</p>
+	<p>Copy frequency: 5</p>
+	<p>Recovery point retention in hours: 2</p>
+	<p>App-consistent snapshot frequency in hours: 1</p>
+	<p>Initial replication start time: Immediately</p>
+	<p>Associated Hyper-V site: CodesizerHyperVsite</p>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/39.JPG"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/40.JPG"/>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/41.jpg"/>
 <p>After finishing all the setting click on ok to prepare infrastructure.</p>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/42.jpg"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/42.JPG"/>
 <p>Navigate to Codesizzlerrecovery and display the replicate items blade. In the replicate items blade click on Replicate.</p>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/43.jpg"/>
 <p>Add a replication policy with the following settings</p>
@@ -141,18 +137,18 @@
 	<p>•	Azure network: Configure now for selected virtual machines</p>
 	<p>•	Post-failover virtual network: RecoveryRG</p>
 	<p>•	Subnet: Default</p>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/45.jpg"/>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/46.jpg"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/45.JPG"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/46.JPG"/>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/47.jpg"/>
 <p>Select virtual machines: VMrecovery (the one which have created in Hyper-V)</p>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/48.jpg"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/48.JPG"/>
 <p>Configure the following properties</p>
 	<p>OS TYPE: Windows</p>
 	<p>OS DISK: Need to select per VM</p>
 	<p>DISK TO REPLICATE: Need to select per VM</p>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/49.jpg"/>
 <p>Configure replication settings with a new replication policy</p> 
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/50.jpg"/>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/50.JPG"/>
 <p>After configuring all the above settings click on OK to enable replication.</p>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/51.jpg"/>
 <p>After enabling replication, navigate to the Recovery vault blade and display the replicate items blade. Monitor that the replication health indicates Healthy and also monitor the status column. Wit until it changes to Protected.</p>
