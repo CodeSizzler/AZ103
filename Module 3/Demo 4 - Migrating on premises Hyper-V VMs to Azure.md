@@ -156,6 +156,5 @@
 <p>After configuring all the above settings click on OK to enable replication.</p>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/51.jpg"/>
 <p>After enabling replication, navigate to the Recovery vault blade and display the replicate items blade. Monitor that the replication health indicates Healthy and also monitor the status column. Wit until it changes to Protected.</p>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/52.jpg"/>
-<p>Navigate to the Hyper-V manager and monitor the Health and status, Failover readiness, Latest recovery points, and Infrastructure view.</p>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/53.jpg"/>
+<p>Then navigate to the Hyper-V manager and monitor the Health and status, Failover readiness, Latest recovery points, and Infrastructure view.</p>
+
