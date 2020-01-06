@@ -22,7 +22,7 @@
 <img src="https://codesizzlergit.blob.core.windows.net/az103-2-001/04.jpg"/>
 <p>Navigate back to the Bash session and run the following command to open the index.html file to update your app service.</p>
 	<p>Nano index.html 	</p>
-<p>Open the index.html file and make a change to the <h1> tag as shown in the below image.</p>
+<p>Open the index.html file and make a change to the tag as shown in the below image.</p>
 <img src="https://codesizzlergit.blob.core.windows.net/az103-2-001/05.jpg"/>
 <img src="https://codesizzlergit.blob.core.windows.net/az103-2-001/06.jpg"/>
 <p>Save the changes and exit the editor.</p>
