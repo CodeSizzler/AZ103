@@ -147,10 +147,9 @@
 	<p>OS DISK: Need to select per VM</p>
 	<p>DISK TO REPLICATE: Need to select per VM</p>
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/49.jpg"/>
-<p>Configure replication settings with a new replication policy</p> 
+<p>Configure replication settings with a new replication policy. After configuring all the above settings click on OK to enable replication.</p> 
 <img src="https://codesizzlergit.blob.core.windows.net/103-03-04/50.JPG"/>
-<p>After configuring all the above settings click on OK to enable replication.</p>
-<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/51.jpg"/>
 <p>After enabling replication, navigate to the Recovery vault blade and display the replicate items blade. Monitor that the replication health indicates Healthy and also monitor the status column. Wit until it changes to Protected.</p>
+<img src="https://codesizzlergit.blob.core.windows.net/103-03-04/51.jpg"/>
 <p>Then navigate to the Hyper-V manager and monitor the Health and status, Failover readiness, Latest recovery points, and Infrastructure view.</p>
 
