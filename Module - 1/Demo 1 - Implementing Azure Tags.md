@@ -1,4 +1,11 @@
 <h1>Manage Azure Subscriptions and Resources - Implementing governance and compliance with Azure initiatives and resource locks</h1>
+
+<h2>Introduction</h2>
+<p>In this article you are going to learn about how to use Azure policies and initiatives in order to enforce resource tagging in its Azure subscription.</p>
+
+<h2>Pre-requisite</h2>
+<p>Befor starting download the template and script for this demo from - http://bit.ly/AzureTagTemplate </p>
+
 <h2>Implementing Azure tags by using Azure policies and initiatives:</h2>
  
 <h2>Steps:</h2>
@@ -33,39 +40,10 @@
 <img src="https://codesizzlergit.blob.core.windows.net/az103-1-01/13.jpg"/>
 <p>•From the Enforce tag and its default value policy definition blade, use the duplicate the definition feature to create a new policy with the following settings:</p> 
 	<p>•Definition location: the name of the subscription you are using in this lab.</p>
-	<p>•Name: az10001b - Audit tag and its value o Description: Audits a required tag and its value. Does not apply to resource groups.</p>  
-	<p>•Category: the name of a new category Lab o Policy rule: the existing policy rule with the effect set to audit, such that the policy definition has the following content and save it.</p>
-	
-	<p>1.	{	</p>
-	<p>2.	"mode": "indexed",	</p>
-	<p>3.	"policyRule": {		</p>
-	<p>4.	"if": { 	</p>	
-	<p>5.	"not": { 	</p>
-	<p>6.	"field": "[concat('tags[', parameters('tagName'), ']')]",	</p> 	  	
-	<p>7.	"equals": "[parameters('tagValue')]"	</p>	 	
-	<p>8.	} 	</p>
-	<p>9.	},	</p>
-	<p>10.	"then": { 	</p>
-	<p>11.	"effect": "audit"	</p> 	
-	<p>12.	} 	</p>
-	<p>13.	}, 	</p>
-	<p>14.	"parameters": { 	</p>
-	<p>15.	"tagName": { 	</p>
-	<p>16.	"type": "String", 	</p>
-	<p>17.	"metadata": { 	</p>
-	<p>18.	"displayName": "Tag Name", 	</p>
-	<p>19.	"description": "Name of the tag, such as 'environment'"		</p>		 
-	<p>20.	} 	</p>
-	<p>21.	}, 	</p>
-	<p>22.	"tagValue": { 	</p>
-	<p>23.	"type": "String", 	</p>
-	<p>24.	"metadata": { 	</p>
-	<p>25.	"displayName": "Tag Value",	</p> 	
-	<p>26.	"description": "Value of the tag, such as 'production'"		</p> 
-	<p>27.	} 	</p>
-	<p>28.	} 	</p>
-	<p>29.	} 	</p>
-	<p>30.	} 	</p>
+	<p>•Name: az10001b - Audit tag and its value </p>
+		<p>o Description: Audits a required tag and its value. Does not apply to resource groups.</p>  
+	<p>•Category: the name of a new category Lab </p>
+		<p>o Policy rule: the existing policy rule with the effect set to audit, you can download the script file from the pre-requisite link and paste the content here.</p>
 
 <img src="https://codesizzlergit.blob.core.windows.net/az103-1-01/14.jpg"/>
 <p>•From the Policy - Definitions blade, navigate to the New Initiative definition and create a new initiative definition with the following settings o Definition location: the name of the subscription you are using in this lab o Name: demoRG1 - Tagging initiative o Description: Collection of tag policies.</p> 
